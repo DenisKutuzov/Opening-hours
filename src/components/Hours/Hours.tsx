@@ -17,7 +17,7 @@ const Hours = ({data}: { data: ScheduleData }) => {
 
     function getCurrentDayOfWeek() {
         const today = new Date()
-        return daysOfWeek[today.getDay()]
+        return daysOfWeek[today.getDay() - 1]
     }
 
 
